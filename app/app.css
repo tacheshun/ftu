@@ -1,0 +1,42 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+
+body{
+    margin-top: 60px;
+}
+.section-title{
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.news-container {
+    height: 250px;
+}
+
+.news-thumb {
+    text-align: center;
+    color: #000000;
+}
+
+.news-thumb h5 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.news-thumb:hover {
+    color: #119f00;
+    text-decoration: none;
+}
+
+.thumbnail {
+    margin-bottom: 10px;
+    max-height: 200px;
+}
