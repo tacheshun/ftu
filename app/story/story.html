@@ -10,11 +10,9 @@
     <div class="overview">{{story.overview}}</div>
     <div class="extra-details">
         <kbd>Runtime: {{story.runtime}}</kbd>
-        <kbd>Country: {{story.countries[0].name}}</kbd>
+        <kbd>Country: {{story.production_countries[0].name}}</kbd>
         <kbd>Language: {{story.spoken_languages[0].name}}</kbd>
         <kbd>Release: {{story.release_date | date}}</kbd>
-        <br>
-        <span>Read the full story: <a href="#" class="btn btn-default-small">{{story.title}}</a>
-        </span>
+        <h3 class="text-left">Read the full story: <a href="#" class="btn btn-default-small">{{story.title}}</a></h3>
     </div>
 </div>
