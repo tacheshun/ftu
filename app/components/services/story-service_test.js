@@ -10,12 +10,6 @@ describe('Unit tests: story-service', function () {
 
         httpMock = $httpBackend;
 
-        //httpMock.when('GET', 'json/stories.json')
-        //    .respond([{
-        //        "title": "Story Title",
-        //        "id": 1
-        //    }]);
-
         httpMock.when('GET', 'json/topics.json')
             .respond([{
                 "id": 1,
