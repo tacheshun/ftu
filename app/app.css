@@ -64,3 +64,8 @@ body{
 .storydetails .return-link {
     float: right;
 }
+
+.topic-title{
+    text-align: right;
+    margin-bottom: 10px;
+}

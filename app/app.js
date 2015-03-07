@@ -4,6 +4,7 @@ angular.module("ftuAPP", [
     'ngRoute',
     'ftuAPP.section',
     'ftuAPP.story',
+    'ftuAPP.topic',
     'ftuAPP.paginate-filter',
     'ftuAPP.story-service'
 ])
@@ -11,5 +12,6 @@ angular.module("ftuAPP", [
         $routeProvider.
             when("/", {templateUrl: "section/section.html", controller: "sectionCtrl"}).
             when("/story/:id", {templateUrl: "story/story.html", controller: "storyCtrl"}).
+            when("/topic/:topicName", {templateUrl: "section/section.html", controller: "topicCtrl"}).
             otherwise({redirectTo: "/"});
     }]);
