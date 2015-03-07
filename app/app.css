@@ -69,3 +69,7 @@ body{
     text-align: right;
     margin-bottom: 10px;
 }
+
+.bs-example{
+    margin: 20px;
+}

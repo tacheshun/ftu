@@ -1,18 +1,17 @@
 <div class="well storydetails col-xs-12">
-    <img class="poster img-responsive img-thumbnail" ng-src="img/posters{{story.poster_path}}">
+    <img class="poster img-responsive img-thumbnail" ng-src="{{news.image.url}}">
     <a class="return-link" href="#/">
         <button class="return-btn btn btn-default">
             <span class="glyphicon glyphicon-arrow-left"></span> Return to Stories
         </button>
     </a>
-    <h1 class="news-title">{{story.title}}({{story.release_date | date:'yyyy'}})</h1>
-    <a href="#" ng-repeat="topic in story.genres" class="btn btn-info">{{topic.name}}</a>
+    <h1 class="news-title">{{story.title}}({{story.publishedDate | date:'yyyy'}})</h1>
+    <a href="#" ng-repeat="topic in story" class="btn btn-info">{{topic.name}}</a>
     <div class="overview">{{story.overview}}</div>
     <div class="extra-details">
-        <kbd>Runtime: {{story.runtime}}</kbd>
-        <kbd>Country: {{story.production_countries[0].name}}</kbd>
-        <kbd>Language: {{story.spoken_languages[0].name}}</kbd>
-        <kbd>Release: {{story.release_date | date}}</kbd>
-        <h3 class="text-left">Read the full story: <a href="#" class="btn btn-default-small">{{story.title}}</a></h3>
+        <kbd>Content: {{story.content}}</kbd>
+        <kbd>Publisher: {{story.publisher}}</kbd>
+        <kbd>Published date: {{story.publishedDate | date}}</kbd>
+        <h3 class="text-left">Read the full story: <a href="#" class="btn btn-default-small">{{story.url}}</a></h3>
     </div>
 </div>

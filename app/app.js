@@ -6,6 +6,7 @@ angular.module("ftuAPP", [
     'ftuAPP.story',
     'ftuAPP.topic',
     'ftuAPP.paginate-filter',
+    'ftuAPP.html-clean',
     'ftuAPP.story-service'
 ])
     .config(['$routeProvider', function ($routeProvider) {
