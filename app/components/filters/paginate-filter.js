@@ -6,7 +6,6 @@ angular.module('ftuAPP.paginate-filter', [])
             try {
                 return array.slice((currentPage - 1) * pageSize, currentPage * pageSize);
             } catch (error) {
-                console.log(error);
                 return array;
             }
         };

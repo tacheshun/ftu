@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module("ftuAPP.section", ['ui.bootstrap'])
-    .controller('sectionCtrl', ['$scope', '$http', function ($scope, $http) {
+    .controller('sectionCtrl', ['$scope', 'storyAPIservice', function ($scope, storyAPIservice) {
 
         $scope.currentPage = 1;
         $scope.pageSize = 12;
 
-        $http.get('json/movies.json').success(function (data) {
+        storyAPIservice.getStories().success(function (data) {
             $scope.storyList = data;
         });
     }]);

@@ -1,0 +1,16 @@
+<div class="well col-sm-10 col-xs-12">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header section-title">Latest news from around the world</div>
+        </div>
+        <div class="news-container col-sm-2 col-xs-6" ng-repeat="news in storyList | paginate:currentPage:pageSize">
+            <a href="#/story/{{news.id}}" class="news-thumb">
+                <img class="thumbnail img-responsive" ng-src="img/posters{{news.poster_path}}">
+                <h5>{{news.title}}</h5>
+            </a>
+        </div>
+        <div class="col-xs-12">
+            <pagination class="pagination" total-items="storyList.length" ng-model="currentPage" items-per-page="pageSize"></pagination>
+        </div>
+    </div>
+</div>

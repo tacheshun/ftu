@@ -40,3 +40,27 @@ body{
     margin-bottom: 10px;
     max-height: 200px;
 }
+
+.storydetails .poster {
+    float: left;
+    margin-right: 20px;
+}
+
+.storydetails .movie-title {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.storydetails .btn-info {
+    margin-right: 5px;
+}
+
+.storydetails .overview {
+    font-size: 17px;
+    margin: 15px 5% 15px 0px;
+}
+
+.storydetails .return-link {
+    float: right;
+}
