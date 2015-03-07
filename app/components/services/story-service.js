@@ -14,7 +14,6 @@ angular.module('ftuAPP.story-service', [])
         };
 
         storyAPI.getTopic = function () {
-           // return (encodeURIComponent($routeParams.topicName) === "undefined") ? "Avira" : encodeURIComponent($routeParams.topicName);
             return encodeURIComponent($routeParams.topicName);
 
         };

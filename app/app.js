@@ -3,7 +3,6 @@
 angular.module("ftuAPP", [
     'ngRoute',
     'ftuAPP.section',
-    'ftuAPP.story',
     'ftuAPP.topic',
     'ftuAPP.paginate-filter',
     'ftuAPP.html-clean',
